@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Editor de fotos </title>
+  
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css"> 
+  
+</head>
+
+<body>
+  <div id="left-panel" class="panel">
+    <h1>Image Editor</h1>
+    <div id="canvas-container"></div>
+    <div id="dropzone">Drag and drop your image here</div>
+    <button id="download-button"> Download Image </button>
+    
+    
+  </div>
+
+  <div id="right-panel" class="panel">
+    <h1>FILTERS</h1>
+    <label for="red-slider">RED </label>
+    <input id="red-slider" type="range" min="-100" max="100" value="0">
+    
+    <label for="green-slider">GREEN</label>
+    <input id="green-slider" type="range" min="-100" max="100" value="0">
+    
+    <label for="blue-slider">BLUE</label>
+    <input id="blue-slider" type="range" min="-100" max="100"  value="0">
+    
+    <label for="saturation-slider">BRILLIANCE</label>
+    <input id="saturation-slider" type="range" min="-100" max="100"  value="0"> 
+    
+    <select id="preset-select">
+      <option value="none">none</option>
+      <option value="grayscale">grayscale</option>
+      <option value="bw">black & white</option>
+      <option value="invert">inverted colors</option>
+      <option value="saturation">brilliance</option> 
+      <option value="sc">single color</option> 
+      
+    </select>
+    
+    <div id="extra-settings">
+      
+      <p>Color</p>
+      <div id="color-box"></div>
+      <label for= "tolerance-slider">Tolerance</label>
+      <input id="tolerance-slider" type="range" min="0" max="100" value="10">
+
+    </div>
+    
+    
+  </div>
+
+  <script src="js/p5.min.js"> </script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"> </script>
+  
+  
+  
+</body>
+</html>
